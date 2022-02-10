@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Primary */
+
+body{
+  font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	/* line-height: 24px; */
+	font-weight: 400;
+	color: #212112;
+	background-image: url('../img/bg-ligth.png');
+	background-position: center;
+	background-repeat: repeat;
+	/* background-size: 7%; */
+	background-color: transparent;
+	overflow-x: hidden;
+  transition: all 200ms linear;
+}
+::selection {
+	color: #fff;
+	background-color: #038C4C;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: #038C4C;
+}
+
+/* Navbar responsive */
+@media screen and (max-width: 430px) and (orientation: portrait){
+	.navbar-light .navbar-toggler-icon{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 360px){
+	.container-nav ul li a{
+		padding: 3px;
+	}
+}
+
+@media screen and (max-width: 368px){
+	.container-nav ul li a{
+		padding: 4px;
+	}
+}
+
+@media screen and (min-width: 370px){
+	.container-nav ul li a{
+		padding: 6px;
+	}
+}
+
+@media screen and (min-width: 390px){
+	.container-nav ul li a{
+		padding: 7px;
+	}
+}
+
+@media screen and (min-width: 400px){
+	.container-nav ul li a{
+		padding: 8px;
+	}
+}
+
+@media screen and (min-width: 410px){
+	.container-nav ul li a{
+		padding: 10px;
+	}
+}
+
+@media screen and (min-width: 430px){
+	.container-nav{
+		display: none;
+	}
+}
+
+/* index */
+
+.contenido{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	padding-right: 10px;
+}
+
+.bienvenida{
+	width: 100%;
+	margin: 20px;
+	padding-top: 30px;
+	height: 80vh;
+}
+
+.bienvenida p{
+	font-size: 1.5rem;
+}
+
+.bienvenida img{
+	float: left;
+	width: 400px;
+	vertical-align: middle;
+	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.3));
+}
+
+.dark .bienvenida img{
+	filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.1));
+}
+
+

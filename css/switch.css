@@ -1,0 +1,44 @@
+.switch{
+	width: 60px;
+	height: 30px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.2);
+	cursor: pointer;
+	margin-left: 10px;
+}
+.dark .switch{
+	background: rgba(255,255,255,0.2);
+}
+
+.switch__toggle{
+	width: 20px;
+	border-radius: 50%;
+	position: relative;
+	top: 3px;
+	left: 35px;
+	transition: left 300ms;
+	animation: rotate 2s infinite alternate-reverse;
+}
+
+.switch__toggle .img-switch{
+	width: 100%;
+	vertical-align: middle;
+	user-select: none;
+	border-radius: 50%;
+	/* background: white; */
+}
+
+.dark .switch__toggle{
+	left: 10px;
+}
+
+/*Animacion*/
+
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(10deg);
+	}
+}
